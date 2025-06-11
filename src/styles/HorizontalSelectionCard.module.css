@@ -1,0 +1,21 @@
+@import './variables.css';
+
+.card-wrapper {
+    all: unset;
+    cursor: pointer;
+    margin: 5px;
+    padding: 5px 7px;
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+
+.card-wrapper:hover {
+    background-color: var(--theme-color);
+}
+
+
+
+.card-wrapper.selected {
+    background-color: var(--theme-color) ; 
+    color: white;
+  }

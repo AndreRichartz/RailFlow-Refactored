@@ -1,0 +1,52 @@
+@import './variables.css';
+
+.Situation-wrapper {
+  padding: 20px;
+  background-color: var(--contrast-background-color);
+  color: var(--contrast-text-color);
+  width: 90%;
+  height: fit-content;
+  margin: 10px auto;
+  border-radius: 15px;
+}
+
+.train-item {
+    display: flex;
+}
+
+.top-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.route {
+    background-color: black;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+.order {
+    background-color: var(--theme-color);
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+train-item {
+    margin: 5px 0;
+}
+
+p {
+    font-weight: bold;
+    margin-right: 3px;
+}
+
+@media screen and (min-width: 768px) {
+    .Situation-wrapper {
+        width: 60%;
+        font-size: 1.3rem;
+    }
+
+}

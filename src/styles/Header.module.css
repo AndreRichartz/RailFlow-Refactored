@@ -8,11 +8,16 @@ header {
     align-items: center;
     height: 3.2rem;
     font-size: 1rem;
+    width: 100%;
 }
 
 .logo-title-container {
     display: flex;
     align-items: center;
+}
+
+.logo {
+    height: 25px;
 }
 
 .search-svg {
@@ -49,7 +54,7 @@ nav a {
 }
 
 .search-svg {
-    width: 18px;
+    width: 20px;
     height: auto;
     margin: 0 20px;
 }
