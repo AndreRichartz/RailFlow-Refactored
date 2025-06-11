@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "../styles/header.css";
-import Search from "./Search.tsx";
+import styles from "../styles/header.module.css";
+import Search from "./Search";
 import { useMediaQuery } from "usehooks-ts";
 
 function Header() {
@@ -12,35 +12,35 @@ function Header() {
   };
 
   return (
-    <div className="container">
+    <div className={styles["container"]}>
       {isSmallDevice ? (
         <>
-          <header>
+          <header className={styles["header"]}>
             <span onClick={toggleOpen}>
               <img
                 src="src/assets/svgs/menu-burger.svg"
                 alt=""
-                className="menu-burguer"
+                className={styles["menu-burguer"]}
               />
             </span>
-            <h1 className="title">RailFlow</h1>
-            <div className="logo-search-container">
-              <span className="logo">
+            <h1 className={styles["title"]}>RailFlow</h1>
+            <div className={styles["logo-search-container"]}>
+              <span className={styles["logo"]}>
                 <img src="src/assets/svgs/train-icon.svg" alt="" />
               </span>
 
-              <div className="search-container">
+              <div className={styles["search-container"]}>
                 <span onClick={toggleOpen}>
                   <img
                     src="src/assets/svgs/search.svg"
                     alt="Search"
-                    className="search-svg"
+                    className={styles["search-svg"]}
                   />
                 </span>
               </div>
             </div>
           </header>
-          <nav className={`nav-small-device ${isOpen ? "open" : ""}`}>
+          <nav className={`${styles["nav-small-device"]} ${isOpen ? styles["open"] : ""}`}>
             <Search />
             <Link to={"/"}>Home</Link>
             <Link to={"/notice-board"}>Quadro de Avisos</Link>
@@ -50,14 +50,14 @@ function Header() {
           </nav>
         </>
       ) : (
-        <header>
-          <div className="logo-title-container">
-            <span className="logo">
+        <header className={styles["header"]}>
+          <div className={styles["logo-title-container"]}>
+            <span className={styles["logo"]}>
               <img src="src/assets/svgs/train-icon.svg" alt="" />
             </span>
-            <h1 className="title">RailFlow</h1>
+            <h1 className={styles["title"]}>RailFlow</h1>
           </div>
-          <nav>
+          <nav className={styles["nav"]}>
             <Link to={"/"}>Home</Link>
             <Link to={"/notice-board"}>Quadro de Avisos</Link>
             <Link to={"/inspection"}>Inspeção</Link>
@@ -65,15 +65,15 @@ function Header() {
             <Link to={"/route-management"}>Gestão de Rotas</Link>
           </nav>
 
-          <div className="search-container">
-            <div className={isOpen && "open"}>
+          <div className={styles["search-container"]}>
+            <div className={isOpen ? styles["open"] : ""}>
               <Search />
             </div>
             <span onClick={toggleOpen}>
               <img
                 src="src/assets/svgs/search.svg"
                 alt="Search"
-                className="search-svg"
+                className={styles["search-svg"]}
               />
             </span>
           </div>
