@@ -1,0 +1,115 @@
+@import "./variables.css";
+
+
+.status-status-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0.7rem 0.7rem;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 600;
+    background-color: var(--contrast-background-color);
+    border-radius:25px;
+    
+}
+
+.status-train-info-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.status-train {
+    color: var(--contrast-text-color);
+    background-color: black;
+    height: min-content;
+    padding: 5px 8px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.status-route {
+    color: var(--contrast-text-color);
+    text-align: center;
+    margin: 0px 10px;
+}
+
+.status-order {
+    background-color: var(--theme-color);
+    height: min-content;
+    padding: 5px 8px;
+    border-radius: 10px;
+}
+
+.status-line {
+    background-color: black;
+    color: var(--contrast-text-color);
+    height: min-content;
+    padding: 5px 8px;
+    border-radius: 10px;
+}
+.status-arrive-time-container {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+}
+.status-arrive-time {
+    color: var(--theme-color);
+    margin: 10px 10px;
+}
+.status-train-movement-status-container {
+   width: 100%;
+}
+.status-train-movement-status {
+    background-color: var(--theme-color);
+    color: var(--contrast-text-color);
+    width: min-content;
+    padding: 5px 8px;
+    border-radius: 10px;
+    position: relative;
+    left: 0;
+}
+
+.status-order-line-container {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .status-container {
+        margin: 10px auto;
+    }
+
+    .status-status-container {
+        width: fit-content;
+        padding: 10px 5%;
+    }
+
+    .status-train {
+        font-size: 0.85rem;
+        margin: 0 5px;
+    }
+
+    .status-route {
+        font-size: 0.9rem;
+    }
+
+    .status-order {
+        font-size: 0.85rem;
+    }
+
+    .status-line {
+        font-size: 0.85rem;
+    }
+
+    .status-arrive-time {
+        font-size: 1rem;
+        margin: 5px auto;
+    }
+
+    .status-train-movement-status {
+        font-size: 0.85rem;
+    }
+}

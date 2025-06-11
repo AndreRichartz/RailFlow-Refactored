@@ -1,0 +1,40 @@
+@import "./variables.css";
+
+
+html, body, #root {
+  height: 100%;
+  padding: 0;
+}
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+
+.status-container, .alerts-container {
+  flex: 1;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  justify-items: center;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .status-container, .alerts-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  body {
+    margin-top: 0;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  
+  
+}
