@@ -1,0 +1,42 @@
+@import "variables.css";
+
+.alerts-alerts-container {
+  width: 90%;
+  padding: 0.8rem 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  background-color: #b2e1e9;
+  height: fit-content;
+}
+
+.alerts-title {
+margin: 0 auto;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+  background-color: var(--contrast-background-color);
+  color: var(--contrast-text-color); 
+  width: fit-content;
+  padding: 0.3rem 0.8rem;
+  border-radius: 10px;
+}
+
+.alerts-train-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  color: #03434d;
+}
+
+
+@media screen and (max-width: 768px) { 
+  
+  .alerts-alerts-container {
+    max-width: 90%;
+    margin: 10px auto;
+}
+
+}
