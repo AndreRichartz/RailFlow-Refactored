@@ -9,10 +9,15 @@
   text-decoration: none;
 }
 
+.header {
+    position: sticky;
+    top: 0;
+    height: fit-content;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--background-color);
-  margin-top: 3.2rem;
 }
 
 @media screen and (min-width: 768px) {
