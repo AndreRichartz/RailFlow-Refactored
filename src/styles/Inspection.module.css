@@ -1,0 +1,13 @@
+.Inspection-wrapper {
+    margin-top: 10px;
+}
+
+.inspection-inspections-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3,1fr); 
+}
+
+.inspection-maintenance-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3,1fr); 
+}
