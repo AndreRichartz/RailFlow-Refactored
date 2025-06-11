@@ -1,0 +1,8 @@
+.search-input {
+    all: unset;
+    background-color: aliceblue;
+    border-radius: 25px;
+    padding: 5px 10px;
+    transition: 0.2s;
+    overflow: hidden;
+}
