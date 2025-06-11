@@ -18,7 +18,7 @@ function Header() {
           <header className={styles["header"]}>
             <span onClick={toggleOpen}>
               <img
-                src="src/assets/svgs/menu-burger.svg"
+                src="src/assets/svg/menu-burger.svg"
                 alt=""
                 className={styles["menu-burguer"]}
               />
@@ -26,17 +26,17 @@ function Header() {
             <h1 className={styles["title"]}>RailFlow</h1>
             <div className={styles["logo-search-container"]}>
               <span className={styles["logo"]}>
-                <img src="src/assets/svgs/train-icon.svg" alt="" />
+                <img src="src/assets/svg/train-icon.svg" alt="" />
               </span>
 
               <div className={styles["search-container"]}>
-                <span onClick={toggleOpen}>
                   <img
-                    src="src/assets/svgs/search.svg"
+                  onClick={toggleOpen}
+                    src="src/assets/svg/search.svg"
                     alt="Search"
                     className={styles["search-svg"]}
                   />
-                </span>
+
               </div>
             </div>
           </header>
@@ -53,7 +53,7 @@ function Header() {
         <header className={styles["header"]}>
           <div className={styles["logo-title-container"]}>
             <span className={styles["logo"]}>
-              <img src="src/assets/svgs/train-icon.svg" alt="" />
+              <img src="src/assets/svg/train-icon.svg" alt="" />
             </span>
             <h1 className={styles["title"]}>RailFlow</h1>
           </div>

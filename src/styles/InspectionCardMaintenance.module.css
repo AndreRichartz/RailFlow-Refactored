@@ -1,6 +1,6 @@
-span {
+.bottom-info-span {
     display: flex;
-    justify-content: left;
+
 }
 
 .message {

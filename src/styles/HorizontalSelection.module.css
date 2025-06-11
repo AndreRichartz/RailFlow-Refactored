@@ -1,0 +1,12 @@
+@import "./variables.css";
+
+.Horizontal-selection-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: fit-content;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  border-bottom: 2px solid var(--contrast-background-color);
+  
+}

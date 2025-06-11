@@ -35,7 +35,7 @@ margin: 0 auto;
 @media screen and (max-width: 768px) { 
   
   .alerts-alerts-container {
-    max-width: 90%;
+    max-width: 50%;
     margin: 10px auto;
 }
 
