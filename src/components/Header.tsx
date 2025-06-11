@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import styles from "../styles/header.module.css";
+import styles from "../styles/Header.module.css";
 import Search from "./Search";
 import { useMediaQuery } from "usehooks-ts";
 
@@ -70,11 +70,7 @@ function Header() {
               <Search />
             </div>
             <span onClick={toggleOpen}>
-              <img
-                src="src/assets/svgs/search.svg"
-                alt="Search"
-                className={styles["search-svg"]}
-              />
+              
             </span>
           </div>
         </header>
