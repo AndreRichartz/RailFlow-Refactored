@@ -11,10 +11,11 @@ function Home() {
   const [activeOption, setActiveOption] = useState(option1);
 
   return (
-    <div className={styles["home-page"]}>
-      <Header />
+   <>
+    <span className={styles['header']}>  <Header /></span>
+       <div className={styles["home-page"]}>
       <img
-        src="src/assets/imgs/10801642-vista-aerea-limpa-do-mapa-da-cidade-noturna-com-rua-e-rio-001-vetor.jpg"
+        src="src/assets/img/10801642-vista-aerea-limpa-do-mapa-da-cidade-noturna-com-rua-e-rio-001-vetor.jpg"
         alt=""
         style={{ height: "500px", width: "100%" }}
       />
@@ -116,6 +117,8 @@ function Home() {
         </div>
       )}
     </div>
+
+    </>
   );
 }
 

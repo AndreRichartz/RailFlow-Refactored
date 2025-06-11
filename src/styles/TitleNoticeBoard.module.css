@@ -1,0 +1,10 @@
+@import "variables.css";
+
+.title {
+    margin: 10px auto;
+    padding: 0.5rem;
+    background-color: var(--contrast-background-color);
+    color: var(--contrast-text-color);
+    width: fit-content;
+    border-radius: 10px;
+}
