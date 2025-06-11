@@ -1,10 +1,9 @@
-import './styles/App.css'   
 import { HashRouter as Router, Routes, Route } from 'react-router-dom'
-import  Home  from './pages/Home.tsx'
-import  NoticeBoard from './pages/Notice-board.tsx'
-import Inspection from './pages/Inspection.tsx'
-import ReportandAnalisys from './pages/Report-and-Analisys.tsx'
-import RouteManagement from './pages/Route-management.tsx'
+import  Home  from './Home.tsx'
+import  NoticeBoard from './NoticeBoard.tsx'
+import Inspection from './Inspection.tsx'
+import ReportandAnalisys from './ReportAndAnalisys.tsx'
+import RouteManagement from './RouteManagement.tsx'
 function App() {
  
     
