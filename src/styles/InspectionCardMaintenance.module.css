@@ -1,0 +1,8 @@
+span {
+    display: flex;
+    justify-content: left;
+}
+
+.message {
+    margin-left: 10px;
+}
