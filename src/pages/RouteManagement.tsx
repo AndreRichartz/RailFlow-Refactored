@@ -4,6 +4,7 @@ import Options from "../components/Option.tsx";
 import Horizontalselection from "../components/HorizontalSelection.tsx";
 import Horizontalselectioncard from "../components/HorizontalSelectionCard.tsx";
 import Situation from "../components/Situation.tsx";
+import Planning from "../components/Planning.tsx";
 
 function RouteManagement() {
   const option1 = "Situação";
@@ -77,6 +78,13 @@ function RouteManagement() {
         currentLocation={"Rua Principal, 123"}
         arriveTime={"2023-10-15 14:00"}
       />
+      )}
+
+      {activeOption === "Planejamento" && (
+        <Planning
+        origin={'Rua Principal, 123'}
+        destination={'Avenida Secundária, 456'}
+        />
       )}
     </>
   );
