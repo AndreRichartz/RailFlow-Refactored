@@ -69,6 +69,8 @@ nav a {
     width: 30px;
 }
 
+
+
 @media (max-width: 768px) {
     header {
         position: fixed;

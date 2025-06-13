@@ -1,0 +1,52 @@
+@import './variables.css';
+.horizontal-selection-wrapper {
+    border-top: 2px solid var( --contrast-background-color);
+}
+
+.graph-1-wrapper {
+    display: flex; 
+}
+
+.graph-1 {
+    margin: 0px auto;
+}
+
+.train {
+    display: flex;
+}
+
+.route {
+    display: flex;
+    color: var(--theme-color);
+
+}
+
+.graphs-wrapper {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.graphs-wrapper img {
+    width: fit-content;
+}
+
+@media  screen and (max-width: 768px) {
+    .report-wrapper {
+    margin-top: 4.2rem;
+}
+    
+.graphs-wrapper {
+    overflow-x: visible;
+    flex-direction: column;
+}
+
+.graphs-wrapper img {
+ width: 100%;
+}
+
+.graph-1 {
+    width: 100%;
+    height: 100%;
+}
+
+}
