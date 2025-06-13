@@ -5,7 +5,7 @@ import Search from "./Search";
 import { useMediaQuery } from "usehooks-ts";
 
 function Header() {
-  const isSmallDevice = useMediaQuery("(max-width: 768px)");
+  const isSmallDevice = useMediaQuery("(max-width: 1024px)");
   const [isOpen, setIsOpen] = useState(false);
   const toggleOpen = () => {
     setIsOpen(!isOpen);
