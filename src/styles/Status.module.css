@@ -9,7 +9,7 @@
     justify-content: space-around;
     font-weight: 600;
     background-color: var(--contrast-background-color);
-    border-radius:25px;
+    border-radius:10px;
     
 }
 
@@ -85,10 +85,11 @@
     .status-status-container {
         width: fit-content;
         padding: 10px 5%;
+        margin: 10px auto;
     }
 
     .status-train {
-        font-size: 0.85rem;
+        font-size: 1rem;
         margin: 0 5px;
     }
 
@@ -97,11 +98,11 @@
     }
 
     .status-order {
-        font-size: 0.85rem;
+        font-size: 1rem;
     }
 
     .status-line {
-        font-size: 0.85rem;
+        font-size: 1rem;
     }
 
     .status-arrive-time {
@@ -110,6 +111,6 @@
     }
 
     .status-train-movement-status {
-        font-size: 0.85rem;
+        font-size: 1rem;
     }
 }

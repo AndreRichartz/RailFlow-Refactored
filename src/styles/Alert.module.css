@@ -1,12 +1,14 @@
 @import "variables.css";
 
 .alerts-alerts-container {
-  width: 90%;
+  width: 100%;
   padding: 0.8rem 1rem;
   border-radius: 0.5rem;
   margin-bottom: 1rem;
   background-color: #b2e1e9;
   height: fit-content;
+  font-size: 1.1rem;
+  margin: 10px auto;
 }
 
 .alerts-title {
@@ -31,12 +33,3 @@ margin: 0 auto;
   color: #03434d;
 }
 
-
-@media screen and (max-width: 768px) { 
-  
-  .alerts-alerts-container {
-    max-width: 50%;
-    margin: 10px auto;
-}
-
-}

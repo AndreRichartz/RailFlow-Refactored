@@ -25,10 +25,12 @@
     font-weight: bold;
     border-radius: 10px;
     cursor: pointer;
+    font-size: 1.2rem;
 }
 
 .select {
     min-width: 350px;
+    margin: 10px 0;
   }
   
   .select select {
@@ -41,6 +43,26 @@
     border-radius: 0.25rem;
     color: #000;
     cursor: pointer;
+  }
+
+  @media screen and (max-width: 768px) {
+    .planning-wrapper {
+        width: fit-content;
+        height: fit-content;
+        margin: 10px auto;
+        padding: 0.8em;
+        align-items: center;
+        font-size: 1.01rem;
+    }
+
+    .select {
+        min-width: 320px;
+    }
+
+    .order {
+        min-width: 300px;
+    }
+    
   }
 
 

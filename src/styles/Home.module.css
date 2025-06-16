@@ -38,9 +38,24 @@ html, body, #root {
 
 }
 
+@media screen and (max-width:1068px) {
+  .status-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media screen and (max-width: 768px) {
   
-  body {
+  .home-page {
     margin-top: 3.8rem;
+  }
+
+.status-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .alerts-container {
+    width: 100%;
+    margin: 10px auto;
   }
 }
