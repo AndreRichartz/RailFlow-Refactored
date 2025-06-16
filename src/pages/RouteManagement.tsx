@@ -46,11 +46,14 @@ function RouteManagement() {
   return (
     <>
       <Header />
-      <img
-        src="/RailFlow-Refactored/assets/img/10801642-vista-aerea-limpa-do-mapa-da-cidade-noturna-com-rua-e-rio-001-vetor.jpg"
-        alt="City map"
-        style={{ display: "block", height: "456px", width: "100%" }}
-      />
+      <iframe
+  src="https://www.google.com/maps?q=Joinville&z=12&output=embed"
+  width="100%"
+  height="500"
+  style={{ border: 0 }}
+  allowFullScreen
+  loading="lazy"
+/>
       <Options
         option1={option1}
         option2={option2}
