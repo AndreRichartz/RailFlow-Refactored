@@ -47,9 +47,9 @@ function RouteManagement() {
     <>
       <Header />
       <img
-        src="src/assets/imgs/10801642-vista-aerea-limpa-do-mapa-da-cidade-noturna-com-rua-e-rio-001-vetor.jpg"
+        src="src/assets/img/10801642-vista-aerea-limpa-do-mapa-da-cidade-noturna-com-rua-e-rio-001-vetor.jpg"
         alt="City map"
-        style={{ display: "block", height: "500px", width: "100%" }}
+        style={{ display: "block", height: "456px", width: "100%" }}
       />
       <Options
         option1={option1}

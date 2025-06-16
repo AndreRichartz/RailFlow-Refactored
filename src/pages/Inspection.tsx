@@ -11,8 +11,11 @@ import styles from "../styles/Inspection.module.css";
 function Inspection() {
   const isBigDevice = useMediaQuery("(min-width: 768px)");
   return (
+    
+    <>
+    <Header />
     <div className={styles["inspection-page"]}>
-      <Header />
+      
       <div className={styles["inspection-wrapper"]}>
         <Titlenoticeboard title={"Inspeções"} />
         <Expand
@@ -99,6 +102,77 @@ function Inspection() {
                   />
                 }
               />
+              <Inspectioncard
+                train={"849"}
+                route={"Marília/Maritlha"}
+                child={
+                  <Inspectioncardinspection
+                    dateMessage={"20/10/2023"}
+                    reasonMessage={"Inspeção de rotina."}
+                  />
+                }
+              />
+              <Inspectioncard
+                train={"849"}
+                route={"Marília/Maritlha"}
+                child={
+                  <Inspectioncardinspection
+                    dateMessage={"20/10/2023"}
+                    reasonMessage={"Inspeção de rotina."}
+                  />
+                }
+              />
+              <Inspectioncard
+                train={"849"}
+                route={"Marília/Maritlha"}
+                child={
+                  <Inspectioncardinspection
+                    dateMessage={"20/10/2023"}
+                    reasonMessage={"Inspeção de rotina."}
+                  />
+                }
+              />
+              <Inspectioncard
+                train={"849"}
+                route={"Marília/Maritlha"}
+                child={
+                  <Inspectioncardinspection
+                    dateMessage={"20/10/2023"}
+                    reasonMessage={"Inspeção de rotina."}
+                  />
+                }
+              />
+              <Inspectioncard
+                train={"849"}
+                route={"Marília/Maritlha"}
+                child={
+                  <Inspectioncardinspection
+                    dateMessage={"20/10/2023"}
+                    reasonMessage={"Inspeção de rotina."}
+                  />
+                }
+              />
+              <Inspectioncard
+                train={"849"}
+                route={"Marília/Maritlha"}
+                child={
+                  <Inspectioncardinspection
+                    dateMessage={"20/10/2023"}
+                    reasonMessage={"Inspeção de rotina."}
+                  />
+                }
+              />
+              <Inspectioncard
+                train={"849"}
+                route={"Marília/Maritlha"}
+                child={
+                  <Inspectioncardinspection
+                    dateMessage={"20/10/2023"}
+                    reasonMessage={"Inspeção de rotina."}
+                  />
+                }
+              />
+
             </div>
           }
         />
@@ -152,7 +226,8 @@ function Inspection() {
         />
       </div>
     </div>
-  );
+  </>);
+  
 }
 
 export default Inspection;
