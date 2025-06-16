@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from '../styles/status.module.css';
 
 type StatusProps = {

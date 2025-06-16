@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from '../styles/Alert.module.css';
 
 type AlertProps = {

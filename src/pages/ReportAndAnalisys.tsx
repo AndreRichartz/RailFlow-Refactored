@@ -1,4 +1,3 @@
-import React, {useRef} from "react";
 import Header from "../components/Header";
 import Titlenoticeboard from "../components/TitleNoticeBoard";
 import styles from "../styles/ReportAndAnalisys.module.css";

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import Header from "../components/Header.tsx";
 import Options from "../components/Option.tsx";
 import Horizontalselection from "../components/HorizontalSelection.tsx";

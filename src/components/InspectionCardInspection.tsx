@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from '../styles/InspectionCardInspection.module.css'
 type InspectioncardinspectionProps = {
     dateMessage: string;

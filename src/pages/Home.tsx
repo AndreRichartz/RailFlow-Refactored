@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { useMediaQuery } from "usehooks-ts";
 import Header from '../components/Header.tsx';
 import Options from '../components/Option.tsx';

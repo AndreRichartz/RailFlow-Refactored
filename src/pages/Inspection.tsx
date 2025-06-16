@@ -1,4 +1,3 @@
-import React from "react";
 import { useMediaQuery } from "usehooks-ts";
 import Header from "../components/Header.tsx";
 import Inspectioncard from "../components/InspectionCard.tsx";

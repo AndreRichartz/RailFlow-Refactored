@@ -1,4 +1,3 @@
-import React from "react";
 import Header from "../components/Header.tsx";
 import Alertcard from "../components/AlertCard.tsx";
 import Titlenoticeboard from "../components/TitleNoticeBoard.tsx";
