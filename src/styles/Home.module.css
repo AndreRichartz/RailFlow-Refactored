@@ -1,0 +1,61 @@
+@import "./variables.css";
+
+
+html, body, #root {
+  height: 100%;
+  padding: 0;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+}
+.home-page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+
+.status-container, .alerts-container {
+  flex: 1;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  justify-items: center;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .status-container, .alerts-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  body {
+    margin-top: 0;
+  }
+
+}
+
+@media screen and (max-width:1068px) {
+  .status-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  
+  .home-page {
+    margin-top: 3.8rem;
+  }
+
+.status-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .alerts-container {
+    width: 100%;
+    margin: 10px auto;
+  }
+}

@@ -1,0 +1,40 @@
+@import './variables.css';
+
+.Inspection-card-wrapper {
+    background-color: var(--contrast-background-color);
+    color: var(--contrast-text-color);
+    width: fit-content;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin: 10px auto;
+    width: 90%;
+}
+
+.Inspection-card-top-info {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.Inspection-card-top-info span {
+    margin-right: 4px;
+}
+
+.route {
+    color: var(--theme-color);
+}
+
+.train {
+ background-color: black;
+ padding: 2px 4px;
+ border-radius: 5px;
+}
+
+@media screen and (min-width:1024px) {
+    
+.Inspection-card-wrapper {
+    width: 90%;
+    font-size: 1.2rem;
+}
+}

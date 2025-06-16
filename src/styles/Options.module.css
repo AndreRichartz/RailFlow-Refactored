@@ -1,0 +1,29 @@
+@import "variables.css";
+
+.options {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 5%;
+    border-top: 2px solid var(--contrast-background-color);
+    border-bottom:2px solid var(--contrast-background-color) ;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.option {
+    all: unset;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.option:hover {
+    color: var(--theme-color);
+    font-weight: bold;
+}
+
+.active {
+    color: var(--theme-color);
+    font-weight: bold;
+}
