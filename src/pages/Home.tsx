@@ -18,7 +18,7 @@ function Home() {
     <span className='header'><Header /></span>
        <div className={styles["home-page"]}>
       <img
-        src="src/assets/img/10801642-vista-aerea-limpa-do-mapa-da-cidade-noturna-com-rua-e-rio-001-vetor.jpg"
+        src="/RailFlow-Refactored/assets/img/10801642-vista-aerea-limpa-do-mapa-da-cidade-noturna-com-rua-e-rio-001-vetor.jpg"
         alt=""
         style={{ height: "500px", width: "100%" }}
       />

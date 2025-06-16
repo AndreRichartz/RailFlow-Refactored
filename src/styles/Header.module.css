@@ -11,6 +11,10 @@ header {
     width: 100%;
 }
 
+.search-svg, .menu-burguer {
+    cursor: pointer;
+}
+
 .logo-title-container {
     display: flex;
     align-items: center;

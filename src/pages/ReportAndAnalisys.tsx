@@ -44,49 +44,46 @@ function ReportAndAnalisys() {
       <div className={styles["report-wrapper"]}>
         <Titlenoticeboard title={"Relatório Geral"} />
         <div className={styles['graph-1-wrapper']}>
-        <img
-          src="src\assets\img\financial-graphs-and-charts-in-excel.png"
-          alt=""
-          className={styles["graph-1"]}
-        />
+          <img
+            src="/RailFlow-Refactored/assets/img/financial-graphs-and-charts-in-excel.png"
+            alt=""
+            className={styles["graph-1"]}
+          />
         </div>
         <Titlenoticeboard title={"Análise dos Trens"} />
-       <div className={styles["horizontal-selection-wrapper"]}>
-       <Horizontalselection>
-        {cardContents.map((content) => (
-          <Horizontalselectioncard
-            key={content}
-            child={content}
-            isSelected={selectedCard === content}
-            onClick={() => handleCardClick(content)}
-          />
-        ))}
-      </Horizontalselection>
-      
-      </div>
-      <span className={styles['train']}><p>Trem:</p>{selectedCard}</span>
-      <span className={styles['route']}><p>Rota do momento:</p>1567</span>
-      {selectedCard !== null &&
-      <div className={styles['graphs-wrapper']}
-      >
-<img
-          src="src\assets\img\financial-graphs-and-charts-in-excel.png"
-          alt=""
-          className={styles["graphs"]}
-          
-        />
-        <img
-          src="src\assets\img\financial-graphs-and-charts-in-excel.png"
-          alt=""
-          className={styles["graphs"]}
-        />
-        <img
-          src="src\assets\img\financial-graphs-and-charts-in-excel.png"
-          alt=""
-          className={styles["graphs"]}
-        />
-      </div>
-}
+        <div className={styles["horizontal-selection-wrapper"]}>
+          <Horizontalselection>
+            {cardContents.map((content) => (
+              <Horizontalselectioncard
+                key={content}
+                child={content}
+                isSelected={selectedCard === content}
+                onClick={() => handleCardClick(content)}
+              />
+            ))}
+          </Horizontalselection>
+        </div>
+        <span className={styles['train']}><p>Trem:</p>{selectedCard}</span>
+        <span className={styles['route']}><p>Rota do momento:</p>1567</span>
+        {selectedCard !== null &&
+          <div className={styles['graphs-wrapper']}>
+            <img
+              src="/RailFlow-Refactored/assets/img/financial-graphs-and-charts-in-excel.png"
+              alt=""
+              className={styles["graphs"]}
+            />
+            <img
+              src="/RailFlow-Refactored/assets/img/financial-graphs-and-charts-in-excel.png"
+              alt=""
+              className={styles["graphs"]}
+            />
+            <img
+              src="/RailFlow-Refactored/assets/img/financial-graphs-and-charts-in-excel.png"
+              alt=""
+              className={styles["graphs"]}
+            />
+          </div>
+        }
       </div>
     </>
   );

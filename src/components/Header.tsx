@@ -16,27 +16,25 @@ function Header() {
       {isSmallDevice ? (
         <>
           <header className={styles["header"]}>
-            <span onClick={toggleOpen}>
               <img
-                src="src/assets/svg/menu-burger.svg"
+              onClick={toggleOpen}
+                src="/RailFlow-Refactored/assets/svg/menu-burger.svg"
                 alt=""
                 className={styles["menu-burguer"]}
               />
-            </span>
             <h1 className={styles["title"]}>RailFlow</h1>
             <div className={styles["logo-search-container"]}>
-              <span className={styles["logo"]}>
-                <img src="src/assets/svg/train-icon.svg" alt="" />
-              </span>
+             
+                <img src="/RailFlow-Refactored/assets/svg/train-icon.svg" alt="" />
+              
 
               <div className={styles["search-container"]}>
-                  <img
+                <img
                   onClick={toggleOpen}
-                    src="src/assets/svg/search.svg"
-                    alt="Search"
-                    className={styles["search-svg"]}
-                  />
-
+                  src="/RailFlow-Refactored/assets/svg/search.svg"
+                  alt="Search"
+                  className={styles["search-svg"]}
+                />
               </div>
             </div>
           </header>
@@ -52,9 +50,9 @@ function Header() {
       ) : (
         <header className={styles["header"]}>
           <div className={styles["logo-title-container"]}>
-            <span className={styles["logo"]}>
-              <img src="src/assets/svg/train-icon.svg" alt="" />
-            </span>
+            
+              <img src="/RailFlow-Refactored/assets/svg/train-icon.svg" alt="" />
+            
             <h1 className={styles["title"]}>RailFlow</h1>
           </div>
           <nav className={styles["nav"]}>
@@ -69,9 +67,12 @@ function Header() {
             <div className={isOpen ? styles["open"] : ""}>
               <Search />
             </div>
-            <span onClick={toggleOpen}>
-              
-            </span>
+              <img
+              onClick={toggleOpen}
+                src="/RailFlow-Refactored/assets/svg/search.svg"
+                alt="Search"
+                className={styles["search-svg"]}
+              />
           </div>
         </header>
       )}
